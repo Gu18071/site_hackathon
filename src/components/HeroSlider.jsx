@@ -81,7 +81,7 @@ const HeroSliderItem = props => (
                 <span>{props.item.description}</span>
             </div>
             <div className="hero-slider__item__info__btn">
-                <a href={"https://api.whatsapp.com/send?phone=554323511009823&text="}>
+                <a href={"http://187.87.223.235/"} target="_blank" rel="noreferrer">
                     <Button
                         backgroundColor={props.item.color}
                         icon="bx bxs-user-account" 

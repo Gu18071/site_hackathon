@@ -1,8 +1,8 @@
 import React from 'react';
 
 import {BrowserRouter, Route} from 'react-router-dom';
+import Header2 from './Header2';
 
-import Header from './Header';
 import Footer from './Footer';
 
 import Routes from '../routes/Routes';
@@ -14,7 +14,7 @@ const Layout = () => {
        <BrowserRouter>
        <Route render={props => (
            <div>
-               <Header {...props}/>
+               <Header2/>
                <div className="containerr">
                    
                    <div className="main">

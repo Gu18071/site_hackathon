@@ -1,27 +1,17 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import React from "react";
-
 import Card from "./Card";
 
 const ProductCard = () => {
-  const [produtos, setProdutos] = useState([]);
-  const [empresas, setEmpresas] = useState([]);
+  const [produtos, getProdutos] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get("http://187.87.223.235/api/produtos/")
-      .then((response) => {
-        //console.log(response.data);
-        setProdutos(response.data.data);
-      });
-    axios
-      .get("http://187.87.223.235/api/empresas/")
-      .then((response) => {
-        //console.log(response.data);
-        setEmpresas(response.data.data);
-      });
-  }, []);
+  useEffect ( () => {
+    axios.get('http://187.87.223.235/api/produtos/')
+    .then((response) => {
+        getProdutos(response.data.data);
+    })
+},[])
 
   return (
     <>
@@ -30,7 +20,7 @@ const ProductCard = () => {
       </h1>
       <div className="row">
         {produtos.map((item, index) => (
-          <Card key={item.id} item={item} empresas={empresas} />
+          <Card key={item.id} item={item}/>
         ))}
       </div>
     </>

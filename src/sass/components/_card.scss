@@ -54,7 +54,7 @@
     &__name {
         margin-bottom: 5px;
         color: $txt-second-color;
-        font-size: 1.25rem;
+        font-size: 1.4rem;
         font-weight: normal;
     }
     &__descricao {
@@ -65,10 +65,10 @@
     }
 
     &__price {
-        color: $txt-main-color;
-        font-size: 1.5rem;
-        font-weight: 600;
+        color: $txt-second-color;
+        font-weight: 200;
         margin-bottom: 5px;
+        font-size: 1.4rem;
 
     }
 
@@ -82,7 +82,8 @@
 }
 
 .product-card_price_old {
-    color: $txt-second-color;
-    margin-left: 20px;
-    font-weight: 200;
+    color: $txt-main-color;
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 1.5rem;
 }

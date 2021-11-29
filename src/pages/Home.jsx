@@ -4,9 +4,9 @@ import Helmet from '../components/Helmet';
 import HeroSlider from '../components/HeroSlider'
 import heroSliderData from '../assets/fake-data/hero-slider'
 import Section, { SectionBody } from '../components/Section'
-import ProductCard from '../components/ProductCard';
 import banner from '../assets/images/banner.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ProductCard from '../components/ProductCard';
 
 
 const Home = () => {
@@ -21,13 +21,11 @@ const Home = () => {
             timeOut={5000}
             />
             {}
-
             <ProductCard/>
-
             <Section>
                 <SectionBody>
-                    <Link to="/catalog">
-                        <img src={banner} alt="" />
+                    <Link to="api/produtosCategoria/2">
+                        <img src={banner} alt="Banner de promoção" />
                     </Link>
                 </SectionBody>
             </Section>
